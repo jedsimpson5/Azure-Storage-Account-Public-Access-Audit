@@ -1,6 +1,6 @@
 # Azure-Storage-Account-Public-Access-Audit
 ## Usage
-This powershell script will gather the public access level on containers in all storage accounts in a particular Azure subscription. The results are exported to a CSV. Possible values for the public access level output are container, blob, or off. The script takes two parameters- AzureSubscriptionName and OutputPath. An example commandline is below:
+This powershell script will gather the public access level on containers in all storage accounts in a particular Azure subscription. The results are exported to a CSV with three columns- StorageAccountName, ContainerName, and PublicAccess. Possible values for PublicAccess are container, blob, or off. The script takes two parameters- AzureSubscriptionName and OutputPath. An example commandline is below:
 ```
 .\AzStorageAccountPublicAccessAudit.ps1 -AzureSubscriptionName "MyAzureSubscription" -OutputPath "C:\MyFolder\Results.csv"
 ```
